@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+const React = require("react")
+const Layout = require("./src/components/layout")
+// Adds a class name to the body element
+exports.onRenderBody = ({ setBodyAttributes }, pluginOptions) => {
+  setBodyAttributes({
+    className: "font-inter text-base text-gray-800 bg-white antialiased font-feature-default",
+  })
+}
