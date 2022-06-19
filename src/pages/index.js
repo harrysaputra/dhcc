@@ -2,10 +2,11 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 // import Layout from "../components/layout"
-// import Seo from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
+    <Seo />
     <header className="mt-12 max-w-5xl mx-auto">
       <div className="logo relative max-w-3xl mx-auto px-8 md:px-4 lg:px-0">
         <StaticImage
