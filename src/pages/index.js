@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = () => (
   <>
     <header className="mt-12 max-w-5xl mx-auto">
-      <div className="logo relative max-w-3xl mx-auto px-8 md:px-0">
+      <div className="logo relative max-w-3xl mx-auto px-8 md:px-4 lg:px-0">
         <StaticImage
           src="../images/logo.png"
           loading="eager"
@@ -15,7 +15,7 @@ const IndexPage = () => (
           formats={["auto", "webp", "avif"]}
           alt="Dubai Healthcare City"
         />
-        <span className="uppercase tracking-widest text-gray-500 font-semibold right-0 md:absolute bottom-0">
+        <span className="uppercase block tracking-widest text-gray-500 font-semibold  md:absolute md:right-4 lg:right-0 bottom-0">
           H1 | 2022 EDITION
         </span>
       </div>
@@ -29,11 +29,11 @@ const IndexPage = () => (
           className="!absolute inset-0"
         />
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center py-8 px-12 md:px-0">
+      <div className="flex flex-col md:flex-row justify-between items-center py-8 px-12 md:px-8 lg:px-0">
         <h3 className="text-3xl md:text-5xl font-bold text-gray-400 shrink-0">
           ARAB HEALTH
         </h3>
-        <div className=" md:w-[2px] bg-gray-400 md:mx-4 self-stretch h-[1px] md:h-0 my-2 md:my-0 ">
+        <div className="hidden md:block md:w-[2px] bg-gray-400 md:mx-4 md:self-stretch my-2 md:my-0 ">
           &nbsp;
         </div>
         <h5 className="text-base text-center md:text-left md:text-3xl ">
@@ -42,17 +42,17 @@ const IndexPage = () => (
         </h5>
       </div>
     </header>
-    <section id="our-message" className="mt-16 px-8 md:px-16 mb-16">
+    <section id="our-message" className="mt-16 px-8 md:px-12 lg:px-16 mb-16">
       <header className="flex md:flex-row items-center md:items-start">
-        <h3 className="text-3xl md:text-6xl font-bold shrink-0 md:shrink">
+        <h3 className="text-3xl md:text-4xl lg:text-6xl font-bold shrink-0 md:shrink">
           OUR MESSAGE
         </h3>
         <div className="h-[2px] md:h-[4px] bg-gray-500 w-full ml-4 md:ml-0">
           &nbsp;
         </div>
       </header>
-      <div className="grid grid-cols-3 gap-x-24 gap-y-16 md:gap-y-0 mt-8">
-        <div className="col-span-3 md:col-span-1 relative">
+      <div className="grid grid-cols-6 md:gap-x-12 lg:gap-x-24 gap-y-16 md:gap-y-0 mt-8">
+        <div className="col-span-6 md:col-span-3 lg:col-span-2 relative">
           <figure>
             <blockquote>
               <svg
@@ -88,14 +88,14 @@ const IndexPage = () => (
                 temporary residence.
               </p>
             </blockquote>
-            <div className="text-center mx-auto mt-12 md:hidden">
+            <div className="text-center md:text-left mx-auto mt-12">
               <StaticImage
                 src="../images/jamal-ceo.jpg"
                 loading="eager"
                 quality={80}
                 formats={["auto", "webp", "avif"]}
                 alt="Jamal Abdulsalam, CEO, Dubai Healthcare City Authority"
-                className="w-2/3"
+                className="w-2/3 lg:hidden"
               />
               <figcaption className="mt-2 md:mt-8 text-xl md:text-2xl font-semibold">
                 JAMAL ABDULSALAM
@@ -107,7 +107,7 @@ const IndexPage = () => (
             </div>
           </figure>
         </div>
-        <div className="col-span-3 md:col-span-1">
+        <div className="col-span-6 md:col-span-3 lg:col-span-2">
           <p>
             Another key milestone in 2021 was the launch of DHCX, a specially
             curated, inclusive business centre designed to enable healthcare
@@ -138,7 +138,7 @@ const IndexPage = () => (
             new heights and drive growth across our ecosystem.
           </p>
         </div>
-        <div className="md:col-span-1 relative hidden md:grid">
+        <div className="lg:col-span-2 relative hidden lg:grid">
           <StaticImage
             src="../images/jamal-ceo.jpg"
             loading="eager"
@@ -152,7 +152,7 @@ const IndexPage = () => (
       <div className="h-[2px] md:h-[4px] w-full bg-gray-500">&nbsp;</div>
     </section>
     <footer className="fixed bottom-0 w-screen">
-      <span className="block text-sm text-gray-600 w-full py-2 px-8 md:px-16 bg-white">
+      <span className="block text-sm text-gray-600 w-full py-2 md:py-4 px-8 md:px-12 lg:px-16 bg-white">
         DHCC <span className="px-2">|</span>H1<span className="px-2">|</span>
         2022 EDITION
       </span>

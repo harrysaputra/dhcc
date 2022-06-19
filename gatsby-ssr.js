@@ -10,6 +10,6 @@ const Layout = require("./src/components/layout")
 // Adds a class name to the body element
 exports.onRenderBody = ({ setBodyAttributes }, pluginOptions) => {
   setBodyAttributes({
-    className: "font-inter text-base text-gray-800 bg-white antialiased font-feature-default",
+    className: "font-inter text-base text-gray-700 bg-white antialiased font-feature-default",
   })
 }
