@@ -69,7 +69,14 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="https://dhcc.ae/favicon.ico"
+      ></link>
+    </Helmet>
   )
 }
 
