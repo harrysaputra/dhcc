@@ -95,7 +95,7 @@ const IndexPage = () => (
                 quality={80}
                 formats={["auto", "webp", "avif"]}
                 alt="Jamal Abdulsalam, CEO, Dubai Healthcare City Authority"
-                className="w-2/3 lg:hidden"
+                className="w-2/3 lg:!hidden"
               />
               <figcaption className="mt-2 md:mt-8 text-xl md:text-2xl font-semibold">
                 JAMAL ABDULSALAM
