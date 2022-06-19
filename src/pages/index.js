@@ -6,13 +6,13 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <>
-    <Seo />
+    <Seo title="DHCC PULSE" />
     <header className="mt-12 max-w-5xl mx-auto">
       <div className="logo relative max-w-3xl mx-auto px-8 md:px-4 lg:px-0">
         <StaticImage
           src="../images/logo.png"
           loading="eager"
-          quality={80}
+          quality={50}
           formats={["auto", "webp", "avif"]}
           alt="Dubai Healthcare City"
         />
@@ -24,7 +24,7 @@ const IndexPage = () => (
         <StaticImage
           src="../images/hero-image.jpg"
           loading="eager"
-          quality={80}
+          quality={50}
           formats={["auto", "webp", "avif"]}
           alt="Dubai Healthcare City Team"
           className="!absolute inset-0"
@@ -37,10 +37,10 @@ const IndexPage = () => (
         <div className="hidden md:block md:w-[2px] bg-gray-400 md:mx-4 md:self-stretch my-2 md:my-0 ">
           &nbsp;
         </div>
-        <h5 className="text-base text-center md:text-left md:text-3xl ">
+        <p className="text-base text-center md:text-left md:text-3xl ">
           DHCC WELCOMES TWO NEW WORLD-LEADING ARAB HEALTH HOSPITALS TO ITS
           COMMUNITY
-        </h5>
+        </p>
       </div>
     </header>
     <section id="our-message" className="mt-16 px-8 md:px-12 lg:px-16 mb-16">
@@ -93,7 +93,7 @@ const IndexPage = () => (
               <StaticImage
                 src="../images/jamal-ceo.jpg"
                 loading="eager"
-                quality={80}
+                quality={50}
                 formats={["auto", "webp", "avif"]}
                 alt="Jamal Abdulsalam, CEO, Dubai Healthcare City Authority"
                 className="w-2/3 lg:!hidden"
