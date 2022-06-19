@@ -21,10 +21,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `DHCC Pulse - Web Magazine`,
+        short_name: `DHCC Pulse`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
